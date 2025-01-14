@@ -6,7 +6,8 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-
+import SvgAlteryouthLogo from "../../../public/assets/icons/LogoAy2";
+import { DrawerWithNavigation } from "../ui/Drawer";
 export function StickyNavbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,47 +29,58 @@ export function StickyNavbar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between p-4">
-        <div className="text-2xl font-bold">
-          <a href="#" className={scrolled ? "text-black" : "text-black"}>
-            Brand
-          </a>
+        <div className="text-2xl font-bold flex">
+          <DrawerWithNavigation />
+
+          <SvgAlteryouthLogo
+            color={scrolled ? "#1dc468" : "#fff"} // Changes the logo color based on the scroll state
+            className="w-[10rem] h-[2rem] mx-3" // Adjust logo size if necessary
+          />
         </div>
-        <div className="hidden md:flex space-x-4">
-          <a
-            href="#about"
-            className={`hover:text-gray-500 ${
-              scrolled ? "text-black" : "text-black"
-            }`}
-          >
-            About
-          </a>
-          <a
-            href="#services"
-            className={`hover:text-gray-500 ${
-              scrolled ? "text-black" : "text-black"
-            }`}
-          >
-            Services
-          </a>
-          <a
-            href="#contact"
-            className={`hover:text-gray-500 ${
-              scrolled ? "text-black" : "text-black"
-            }`}
-          >
-            Contact
-          </a>
-        </div>
-        <div>
-          <button
-            className={`px-4 py-2 rounded-lg ${
-              scrolled
-                ? "bg-blue-500 text-black hover:bg-blue-600"
-                : "bg-transparent text-black border border-black hover:bg-black hover:text-black"
-            }`}
-          >
-            Get Started
-          </button>
+
+        <div className="">
+          <div className="hidden md:flex space-x-4 items-center">
+            <a
+              href="#about"
+              className={`hover:text-gray-500 font-bold ${
+                scrolled ? "text-green-400" : "text-white"
+              }`}
+            >
+              About
+            </a>
+            <a
+              href="#services"
+              className={`hover:text-gray-500 font-bold ${
+                scrolled ? "text-green-400" : "text-white"
+              }`}
+            >
+              How it works
+            </a>
+            <a
+              href="#contact"
+              className={`hover:text-gray-500 font-bold ${
+                scrolled ? "text-green-400" : "text-white"
+              }`}
+            >
+              Scholarships
+            </a>
+            <a
+              href="#contact"
+              className={`hover:text-gray-500 font-bold ${
+                scrolled ? "text-green-400" : "text-white"
+              }`}
+            >
+              Collaborate
+            </a>
+            <a
+              href="#contact"
+              className={`hover:text-gray-500 font-bold ${
+                scrolled ? "text-green-400" : "text-white"
+              }`}
+            >
+              Login
+            </a>
+          </div>
         </div>
       </div>
     </nav>
