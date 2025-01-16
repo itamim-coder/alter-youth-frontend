@@ -1,6 +1,7 @@
 import { StickyNavbar } from "../nav/NavBar";
 import heroImage from "../../../public/assets/images/hero_pc.jpg";
 import { InputCustomStyles } from "../ui/Input";
+import Count from "../ui/Count";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -27,8 +28,7 @@ const MainLayout: React.FC<RootLayoutProps> = ({ children }) => {
               </h1>
               <p className="mt-4 text-white text-lg">
                 Directly for students in Government <br /> Primary Schools
-                throughout
-                Bangladesh
+                throughout Bangladesh
               </p>
             </div>
 
@@ -40,33 +40,30 @@ const MainLayout: React.FC<RootLayoutProps> = ({ children }) => {
               </h2>
               <form>
                 <div className="mb-4">
-                  <InputCustomStyles />
-              
+                  <InputCustomStyles type={"text"} placeholder={"Your Name"} />
                 </div>
                 <div className="mb-4">
-                  <InputCustomStyles />
-              
+                  <InputCustomStyles
+                    type={"email"}
+                    placeholder={"Your Email"}
+                  />
                 </div>
                 <div className="mb-4">
-                  <InputCustomStyles />
-              
+                  <InputCustomStyles
+                    type={"number"}
+                    placeholder={"Your Number"}
+                  />
                 </div>
-                <div className="mb-4">
-                  <InputCustomStyles />
-              
+                <div className="">
+                  <p className="font-semibold">Number of scholarships</p>
+                  <Count />
                 </div>
-                {/* <button
-                  type="submit"
-                  className=" bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
-                >
-                  Submit Application
-                </button> */}
               </form>
             </div>
           </div>
         </header>
       </div>
-      <main className="min-h-screen w-full max-w-7xl mx-auto">{children}</main>
+      <main className="">{children}</main>
       {/* <Footer /> */}
     </div>
   );

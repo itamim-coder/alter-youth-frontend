@@ -20,3 +20,38 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Customize Splide Arrows */
+.splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.splide__arrow--prev {
+  left: -3rem;
+}
+
+.splide__arrow--next {
+  right: -3rem;
+}
+
+/* Center pagination (dots) below the slider */
+.splide__pagination {
+  position: absolute;
+  bottom: -2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #d1d1d1;
+  border-radius: 50%;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #007bff;
+}

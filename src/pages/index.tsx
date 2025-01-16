@@ -2,6 +2,9 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { Button } from "@material-tailwind/react";
 import { StickyNavbar } from "@/components/nav/NavBar";
+import AppScholarShips from "@/components/section/AppScholarShips";
+import CommunityCarousel from "@/components/ui/CommunityCarousel";
+import SchoolCarousel from "@/components/ui/SchoolCarousel";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,8 +20,9 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div>
-      <p className="min-h-screen">hello</p>
-      <p className="min-h-screen">hello</p>
+      <AppScholarShips></AppScholarShips>
+      <CommunityCarousel></CommunityCarousel>
+      <SchoolCarousel></SchoolCarousel>
     </div>
   );
 }

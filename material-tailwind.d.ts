@@ -52,5 +52,8 @@ declare module "@material-tailwind/react" {
   export interface ListItemSuffixProps extends EventCapture {
     placeholder?: unknown;
   }
+  export interface DialogProps extends EventCapture {
+    placeholder?: unknown;
+  }
   // more...
 }
