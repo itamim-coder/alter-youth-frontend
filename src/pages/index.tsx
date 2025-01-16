@@ -5,6 +5,11 @@ import { StickyNavbar } from "@/components/nav/NavBar";
 import AppScholarShips from "@/components/section/AppScholarShips";
 import CommunityCarousel from "@/components/ui/CommunityCarousel";
 import SchoolCarousel from "@/components/ui/SchoolCarousel";
+import CommunityImpact from "@/components/section/CommunityImpact";
+import School from "@/components/section/School";
+import ScholarshipLeaderboard from "@/components/section/ScholarshipLeaderboard";
+import Eligibility from "@/components/section/Eligibility";
+import Advertise from "@/components/section/Advertise";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,8 +26,11 @@ export default function Home() {
   return (
     <div>
       <AppScholarShips></AppScholarShips>
-      <CommunityCarousel></CommunityCarousel>
-      <SchoolCarousel></SchoolCarousel>
+      <ScholarshipLeaderboard></ScholarshipLeaderboard>
+      <CommunityImpact></CommunityImpact>
+      <School></School>
+      <Eligibility />
+      <Advertise />
     </div>
   );
 }

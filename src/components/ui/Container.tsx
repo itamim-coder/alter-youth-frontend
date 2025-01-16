@@ -1,7 +1,13 @@
-import React from "react";
+import { ReactNode } from "react";
 
-const Container: React.ReactNode = ({ children }) => {
-  return <div>Container</div>;
+type TContainerProps = {
+  children: ReactNode;
+};
+
+const Container = ({ children }: TContainerProps) => {
+  return (
+    <div className="w-full max-w-7xl mx-auto">{children}</div>
+  );
 };
 
 export default Container;

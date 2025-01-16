@@ -14,7 +14,7 @@ const reviews = [
 
 const CommunityCarousel = () => {
   return (
-    <div className="py-12">
+    <div className="py-9">
       <Splide
         options={{
           type: "loop",
