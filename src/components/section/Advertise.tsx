@@ -9,7 +9,7 @@ const Advertise = () => {
     <Container>
       <div className="mb-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="relative group lg:h-[30rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
+        <div className="relative group lg:h-[30rem] sm:h-[20rem] h-[15rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
           {/* Background image with zoom effect */}
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-300 group-hover:scale-105"
@@ -20,7 +20,7 @@ const Advertise = () => {
 
           {/* Text Content */}
           <div className="absolute top-4 p-3 left-4 z-10 text-white">
-            <h2 className="text-3xl font-bold whitespace-pre-line">
+            <h2 className="text-xl sm:text-3xl font-bold whitespace-pre-line">
               Are you a teacher?{"\n"}
               Get your students{"\n"}listed on the platform
             </h2>
@@ -29,13 +29,13 @@ const Advertise = () => {
           </div>
 
           {/* Bottom Positioned Text */}
-          <div className="absolute w-full bottom-4   text-xs text-white text-center">
-           Only for Government Primary Schools in Bangladesh
+          <div className="absolute w-full bottom-4 text-xs sm:text-sm text-white text-center">
+            Only for Government Primary Schools in Bangladesh
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className="relative group lg:h-[30rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
+        <div className="relative group lg:h-[30rem] sm:h-[20rem] h-[15rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-300 group-hover:scale-105"
             style={{
@@ -43,7 +43,7 @@ const Advertise = () => {
             }}
           ></div>
           <div className="absolute top-4 p-3 left-4 z-10 text-white">
-            <h2 className="text-3xl font-bold whitespace-pre-line">
+            <h2 className="text-xl sm:text-3xl font-bold whitespace-pre-line">
               You can be{"\n"}anywhere{"\n"}in the world
             </h2>
 
@@ -52,7 +52,7 @@ const Advertise = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="relative group lg:h-[30rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
+        <div className="relative group lg:h-[30rem] sm:h-[20rem] h-[15rem] rounded-lg overflow-hidden shadow-lg cursor-pointer">
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-300 group-hover:scale-105"
             style={{
@@ -60,7 +60,7 @@ const Advertise = () => {
             }}
           ></div>
           <div className="absolute top-4 p-3 left-4 z-10 text-white">
-            <h2 className="text-3xl font-bold whitespace-pre-line">
+            <h2 className="text-xl sm:text-3xl font-bold whitespace-pre-line">
               While students{"\n"}get closer to{"\n"}their dreams
             </h2>
 

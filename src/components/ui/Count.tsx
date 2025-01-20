@@ -14,7 +14,7 @@ const Count = () => {
   };
   return (
     <>
-      <div className="flex justify-between items-center mt-3">
+      <div className="flex justify-between items-end mt-3">
         {/* Counter Buttons */}
         <div className="flex space-x-3 items-center rounded bg-gray-200">
           {/* Decrement Button */}
@@ -22,10 +22,8 @@ const Count = () => {
             type="button"
             onClick={handleDecrement}
             disabled={count <= 1}
-            className={`w-10 h-10 rounded bg-green-400 text-white font-bold flex justify-center items-center transition ${
-              count <= 1
-                ? "bg-gray-400 cursor-not-allowed"
-                : "hover:bg-green-600"
+            className={`w-10 h-10 rounded  text-white font-bold flex justify-center items-center transition ${
+              count <= 1 ? "bg-gray-400 cursor-not-allowed" : "bg-green-400"
             }`}
           >
             -
@@ -39,10 +37,8 @@ const Count = () => {
             type="button"
             onClick={handleIncrement}
             disabled={count >= 3}
-            className={`w-10 h-10  rounded bg-green-400 text-white font-bold flex justify-center items-center transition ${
-              count >= 3
-                ? "bg-gray-400 cursor-not-allowed"
-                : "hover:bg-green-600"
+            className={`w-10 h-10  rounded text-white font-bold flex justify-center items-center transition ${
+              count >= 3 ? "bg-gray-400 cursor-not-allowed" : "bg-green-400"
             }`}
           >
             +
@@ -56,7 +52,9 @@ const Count = () => {
           </p>
         </div>
       </div>
-      <Button className="w-full bg-[#1dc468] mt-4 py-3 text-md">Start Now</Button>
+      <Button className="w-full bg-[#1dc468] mt-4 py-3 text-md">
+        Start Now
+      </Button>
     </>
   );
 };

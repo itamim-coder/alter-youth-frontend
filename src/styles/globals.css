@@ -7,8 +7,6 @@
   --foreground: #171717;
 }
 
-
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -54,4 +52,18 @@ body {
 
 .splide__pagination__page.is-active {
   background-color: #007bff;
+}
+
+.hero-bg {
+  height: 85vh;
+  background-image: url("/assets/images/hero_pc.jpg"); /* Use correct relative path */
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .hero-bg {
+
+    background-image: url("/assets/images/hero_home_phone.jpg"); /* Use correct relative path */
+
+  }
 }

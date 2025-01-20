@@ -1,12 +1,5 @@
 import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-// or only core styles
-import "@splidejs/splide/css/core";
 
-import img1 from "../../../public/assets/images/app_graduation.png";
-import img2 from "../../../public/assets/images/app_scholarship.jpg";
-import img3 from "../../../public/assets/images/app_school.png";
 const AppScholarShips = () => {
   return (
     <>
@@ -183,10 +176,10 @@ const AppScholarShips = () => {
             </svg>
           </div>
         </div>
-        <div className="flex mt-9 justify-evenly">
-          <div className="flex flex-col items-center justify-center space-y-4">
+        <div className="flex flex-col sm:flex-row sm:justify-evenly mt-9 space-y-6 sm:space-y-0">
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6">
             <img
-              className="w-44"
+              className="w-44 sm:w-56"
               src="/assets/images/app_scholarship.jpg"
               alt="Graduation Illustration"
             />
@@ -199,9 +192,9 @@ const AppScholarShips = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center space-y-4">
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6">
             <img
-              className="w-44"
+              className="w-44 sm:w-56"
               src="/assets/images/app_school.png"
               alt="Graduation Illustration"
             />
@@ -213,9 +206,10 @@ const AppScholarShips = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center space-y-4">
+
+          <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6">
             <img
-              className="w-44"
+              className="w-44 sm:w-56"
               src="/assets/images/app_graduation.png"
               alt="Graduation Illustration"
             />

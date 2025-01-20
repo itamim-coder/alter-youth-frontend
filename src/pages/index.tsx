@@ -10,6 +10,9 @@ import School from "@/components/section/School";
 import ScholarshipLeaderboard from "@/components/section/ScholarshipLeaderboard";
 import Eligibility from "@/components/section/Eligibility";
 import Advertise from "@/components/section/Advertise";
+import AppVideo from "@/components/section/AppVideo";
+import Footer from "@/components/section/Footer";
+import Partnership from "@/components/section/Partnership";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +34,9 @@ export default function Home() {
       <School></School>
       <Eligibility />
       <Advertise />
+      <AppVideo />
+      <Partnership />
+      <Footer />
     </div>
   );
 }

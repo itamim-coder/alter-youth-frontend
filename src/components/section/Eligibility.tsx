@@ -3,6 +3,7 @@ import Container from "../ui/Container";
 import DisableFather from "../../../public/assets/icons/DisabledFather";
 import SingleMother from "../../../public/assets/icons/SingleMother";
 import Orphan from "../../../public/assets/icons/Orphan";
+
 const Eligibility = () => {
   return (
     <Container>
@@ -18,34 +19,31 @@ const Eligibility = () => {
           </p>
         </div>
         <div className="py-6">
-          <div className="grid grid-cols-3 gap-6">
+          {/* Make the grid responsive */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex items-center p-6 gap-6 shadow-xl rounded-xl">
-              <DisableFather className="w-[3rem] h-[3rem] " />
+              <DisableFather className="w-[3rem] h-[3rem]" />
               <div>
                 <h5 className="text-base font-semibold">Disabled Father</h5>
                 <p>Student's father is physically unable to work</p>
               </div>
             </div>
-            <div className="flex items-center p-6 gap-6 shadow-lg rounded-lg">
-              <SingleMother className="w-[3rem] h-[3rem] "/>
+            <div className="flex items-center p-6 gap-6 shadow-xl rounded-xl">
+              <SingleMother className="w-[3rem] h-[3rem]" />
               <div>
-                <h5 className=" font-semibold">Single Mother</h5>
+                <h5 className="font-semibold">Single Mother</h5>
                 <p>Student's father is deceased or has abandoned the family</p>
               </div>
             </div>
-            <div className="flex items-center p-6 gap-6 shadow-lg rounded-lg">
-              <Orphan className="w-[3rem] h-[3rem] "/>
+            <div className="flex items-center p-6 gap-6 shadow-xl rounded-xl">
+              <Orphan className="w-[3rem] h-[3rem]" />
               <div>
-                <h5 className=" font-semibold">Orphan</h5>
+                <h5 className="font-semibold">Orphan</h5>
                 <p>Both parents are deceased or have abandoned the child</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div>
-        
       </div>
     </Container>
   );

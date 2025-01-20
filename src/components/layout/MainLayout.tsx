@@ -11,12 +11,7 @@ const MainLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <div>
       <div>
-        <header
-          className="h-[85vh] bg-cover bg-center relative"
-          style={{
-            backgroundImage: `url(${heroImage.src})`, // Accessing the image URL directly
-          }}
-        >
+        <header className=" relative  hero-bg ">
           {/* Dark Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-bl from-black to-transparent opacity-60"></div>
           <StickyNavbar />

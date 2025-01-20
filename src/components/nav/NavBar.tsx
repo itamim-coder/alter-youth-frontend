@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import SvgAlteryouthLogo from "../../../public/assets/icons/LogoAy2";
 import { DrawerWithNavigation } from "../ui/Drawer";
+
 export function StickyNavbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,53 +34,35 @@ export function StickyNavbar() {
           <DrawerWithNavigation />
 
           <SvgAlteryouthLogo
-            color={scrolled ? "#1dc468" : "#fff"} // Changes the logo color based on the scroll state
-            className="w-[10rem] h-[2rem] mx-3" // Adjust logo size if necessary
+            color={scrolled ? "#1dc468" : "#fff"}
+            className="w-[10rem] h-[2rem] mx-3"
           />
         </div>
 
         <div className="">
-          <div className="hidden md:flex space-x-4 items-center">
-            <a
-              href="#about"
-              className={`hover:text-gray-500 font-bold ${
-                scrolled ? "text-green-400" : "text-white"
-              }`}
-            >
-              About
-            </a>
-            <a
-              href="#services"
-              className={`hover:text-gray-500 font-bold ${
-                scrolled ? "text-green-400" : "text-white"
-              }`}
-            >
-              How it works
-            </a>
-            <a
-              href="#contact"
-              className={`hover:text-gray-500 font-bold ${
-                scrolled ? "text-green-400" : "text-white"
-              }`}
-            >
-              Scholarships
-            </a>
-            <a
-              href="#contact"
-              className={`hover:text-gray-500 font-bold ${
-                scrolled ? "text-green-400" : "text-white"
-              }`}
-            >
-              Collaborate
-            </a>
-            <a
-              href="#contact"
-              className={`hover:text-gray-500 font-bold ${
-                scrolled ? "text-green-400" : "text-white"
-              }`}
-            >
-              Login
-            </a>
+          <div className="hidden md:flex space-x-6 items-center">
+            {[
+              "About",
+              "How it works",
+              "Scholarships",
+              "Graduates",
+              "Collaborate",
+              "Login",
+            ].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className={`relative group text-sm font-bold ${
+                  scrolled ? "text-green-400" : "text-white"
+                }`}
+              >
+                {item}
+                <span
+                  className="absolute left-0 w-0 h-[3px] bg-green-400 bottom-[-3px] 
+                           transition-all duration-300 ease-in-out group-hover:w-full"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
